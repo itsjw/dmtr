@@ -18,7 +18,7 @@ router.post('/', function(req, res, next) {
     from: 'No-Reply <noreplydmtr@gmail.com>',
     to: 'Contato DMTR <contato@dmtr.co>',
     subject: '[DMTR] '+ name,
-    replyTo: mail,
+    replyTo: email,
     text: 'Mensagem: ' + msg + '\nEmail: ' + email + '\nTelefone: ' + phone
   };
 
