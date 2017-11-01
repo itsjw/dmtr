@@ -2,6 +2,20 @@
 
 $(function() {
 
+  //Form validation
+  $('#messageForm').parsley();
+
+  var SPMaskBehavior = function (val) {
+    return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+  },
+  spOptions = {
+    onKeyPress: function(val, e, field, options) {
+        field.mask(SPMaskBehavior.apply({}, arguments), options);
+      }
+  };
+
+  $('.phone-mask').mask(SPMaskBehavior, spOptions);
+
   // Select all links with hashes
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -55,9 +69,9 @@ $(function() {
       msg.text(data.message);
       msg.addClass('is-info');
       msg.show();
-
       submit.show();
       loading.hide();
+      $('#messageForm').find('input[type=text], input[type=email], textarea').val('');
     }).error(function(err) {
       msg.text(err.message);
       msg.addClass('is-danger');

@@ -47,16 +47,16 @@ block content
           form#messageForm.form(action="/", method="post")
             .field
               .control
-                input.input(type="text", placeholder="Insira seu nome*", name="name")
+                input.input(type="text", placeholder="Insira seu nome*", name="name", data-parsley-error-message="Este campo é obrigatório", required)
             .field
               .control
-                input.input(type="text", placeholder="Insira seu e-mail*", name="email")
+                input.input(type="email", placeholder="Insira seu e-mail*", name="email", data-parsley-error-message="Este campo é obrigatório", required)
             .field
               .control
-                input.input(type="text", placeholder="Insira seu telefone", name="phone")
+                input.input.phone-mask(type="text", placeholder="Insira seu telefone", name="phone")
             .field
               .control
-                textarea.textarea(type="text", placeholder="Compartilhe com a gente sua ideia*", name="message")
+                textarea.textarea(type="text", placeholder="Compartilhe com a gente sua ideia*", name="message", data-parsley-error-message="Este campo é obrigatório", required)
             .field
               .control.has-text-centered
                 span#loading(style="display: none")

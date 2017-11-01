@@ -2379,6 +2379,13 @@ body {
   border-radius: 0px;
   box-shadow: none; }
 
+.parsley-error {
+  border-color: #ff3860; }
+
+.parsley-custom-error-message {
+  color: #ff3860;
+  font-size: .75rem; }
+
 .header {
   position: relative;
   padding-top: 40px;
