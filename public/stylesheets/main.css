@@ -2412,6 +2412,9 @@ body {
     color: #FFF;
     font-size: 3.8rem; }
 
+.container > .navbar .navbar-brand {
+  margin-left: 0; }
+
 .we-do {
   margin-top: -100px;
   padding-top: 0; }
@@ -2493,5 +2496,8 @@ footer {
 
 .mr {
   margin-right: .5rem; }
+
+:focus {
+  outline: none; }
 
 /*# sourceMappingURL=main.css.map */

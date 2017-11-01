@@ -43,3 +43,9 @@
     font-size: 3.8rem;
   }
 }
+
+.container {
+  > .navbar .navbar-brand {
+    margin-left: 0;
+  }
+}
