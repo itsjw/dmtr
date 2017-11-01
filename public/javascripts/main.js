@@ -21,7 +21,7 @@ $(function() {
       submit.show();
       loading.hide();
     }).error(function(err) {
-      msg.text(data.message);
+      msg.text(err.message);
       msg.addClass('is-danger');
       msg.show();
 
