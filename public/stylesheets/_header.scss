@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(../images/slide1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 650px;
+
+  .navbar {
+    background-color: transparent;
+  }
+
+  .logo {
+    transition: .3s ease-in-out;
+    color: #FFF;
+  }
+
+  .navbar-menu {
+    a.navbar-item {
+      color: #FFF;
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      transition: .3s ease;
+
+      &:hover {
+        background-color: transparent;
+        color: darken(#FFF, 30%);
+      }
+    }
+  }
+}
+
+.header-content {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  width: 100%;
+  .title {
+    color: #FFF;
+    font-size: 3.8rem;
+  }
+}

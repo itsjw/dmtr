@@ -1,0 +1,25 @@
+.capabilities {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #141414;
+
+  .title {
+    color: #FFF;
+  }
+}
+
+.capabilities-items {
+  margin-top: 100px;
+
+  p { color: rgba(#FFF, .4) }
+  
+  .heading {
+    color: #323232;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .fa { color: #FFF }
+
+  .columns { margin-bottom: 40px }
+}

@@ -1,0 +1,15 @@
+@import "../plugins/font-awesome/scss/font-awesome.scss";
+
+@import "typography";
+@import "element";
+@import "forms";
+@import "header";
+@import "wedo";
+@import "capabilities";
+@import "contact";
+@import "notification";
+@import "footer";
+
+.mr {
+  margin-right: .5rem;
+}

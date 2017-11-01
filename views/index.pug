@@ -1,0 +1,81 @@
+extends layout
+
+block content
+  header.header
+    .container
+      nav.navbar(role="navigation", aria-label="main navigation")
+        .navbar-brand
+          img.image.is-96x96(src="/images/logo.png")
+            
+        .navbar-menu
+          .navbar-end
+            a.navbar-item(href="#")
+              | Contato
+      .header-content.has-text-centered
+        h1.title
+          | We create outstanding
+          br
+          | websites
+        a.button.is-dmtr-white(href="javascript:void(0)") Em manutenção
+  section.section.we-do
+    .container
+      .columns
+        .column.is-4
+          p.heading.is-size-7 O que fazemos
+          p.title.is-size-2 Fazemos de forma diferente
+        .column.is-8.we-do-content
+          p.serif-text.is-size-5
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at tincidunt velit, eget tincidunt sapien. Praesent ornare a ex sed malesuada. Nunc dolor dolor, euismod ac leo eu, egestas vestibulum orci. Curabitur non diam eget ante pharetra laoreet at rhoncus quam. Cras at ullamcorper velit, at egestas nibh.
+          .columns.we-do-items
+            .column
+              i.fa.fa-tint.is-size-2
+              span.is-uppercase.has-text-weight-bold UI/UX Design
+            .column
+              i.fa.fa-laptop.is-size-2
+              span.is-uppercase.has-text-weight-bold Web Apps
+            .column
+              i.fa.fa-mobile.is-size-2
+              span.is-uppercase.has-text-weight-bold Mobile Apps
+  section.section.contact
+    .container
+      h2.title.is-clearfix
+        | Vamos fazer algo incrível juntos
+      br
+      p.serif-text.is-size-5 Entre em contato conosco e faça um orçamento
+
+      .columns
+        .column.is-6.is-offset-3
+          form#messageForm.form(action="/", method="post")
+            .field
+              .control
+                input.input(type="text", placeholder="Insira seu nome*", name="name")
+            .field
+              .control
+                input.input(type="text", placeholder="Insira seu e-mail*", name="email")
+            .field
+              .control
+                input.input(type="text", placeholder="Insira seu telefone", name="phone")
+            .field
+              .control
+                textarea.textarea(type="text", placeholder="Compartilhe com a gente sua ideia*", name="message")
+            .field
+              .control.has-text-centered
+                span#loading(style="display: none")
+                  i.fa.fa-circle-o-notch.fa-spin.fa-2x.fa-fw
+                button.button.is-dmtr-dark.is-small(type="submit") Enviar mensagem
+          p#msg.bd-notification.animated.zoomInDown(style="display: none") Mensagem enviada com sucesso
+  footer.hero
+    .hero-body
+      .columns
+        .column.is-4
+          span.is-size-6.is-light
+            i.fa.fa-envelope.mr
+            | contato@dmtr.co
+            br
+            i.fa.fa-phone.mr
+            | (31) 98402-0691
+            br
+            i.fa.fa-map-marker.mr
+            | Av. Afonso Pena 2881 - Belo Horizonte
+        .column.is-4.is-offset-4.has-text-centered.bg-black
+          img.image.is-64x64(src="/images/logo.png")

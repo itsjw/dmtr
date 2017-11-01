@@ -1,0 +1,35 @@
+.button.is-dmtr-dark,
+.button.is-dmtr-white {
+  padding: 28px 30px;
+  background-color: transparent;
+  font-weight: 700;
+  border-radius: 0;
+  border-width: 2px;
+  transition: .3s ease;
+
+  &.is-small {
+    padding: 20px 24px;
+    font-weight: 400;
+    line-height: 0;
+  }
+}
+
+.button.is-dmtr-white {
+  color: #FFF;
+  border-color: #FFF;
+
+  &:hover {
+    color: #333;
+    background-color: #FFF;
+  }
+}
+
+.button.is-dmtr-dark {
+  color: #000;
+  border-color: #000;
+  
+  &:hover {
+    color: #FFF;
+    background-color: #000;
+  }
+}

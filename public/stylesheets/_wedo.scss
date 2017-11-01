@@ -1,0 +1,37 @@
+.we-do {
+  margin-top: -100px;
+  padding-top: 0;
+  & > .container {
+    background: radial-gradient(circle at 1.98% 13.04%, #FF512F, transparent 100%), radial-gradient(circle at 98.02% 28.95%, #DD2476, transparent 100%), radial-gradient(circle at 50% 50%, #ffffff, #ffffff 100%);
+    padding: 70px 100px;
+  }
+
+  .heading {
+    color: rgba(#FFF, .45);
+    margin-bottom: 30px;
+  }
+
+  .title {
+    color: #FFF;
+  }
+}
+.we-do-content {
+  padding-top: 60px;
+  color: #FFF;
+}
+
+.we-do-items {
+  margin-top: 30px;
+
+  span {
+    font-size: 14px;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    color: #323232;
+    vertical-align: middle;
+  }
+
+  .fa {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}

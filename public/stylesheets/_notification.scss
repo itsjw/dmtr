@@ -1,0 +1,16 @@
+.bd-notification {
+  border-radius: 3px;
+  padding: 1.25rem 0;
+  position: relative;
+  text-align: center;
+
+  &.is-info {
+    background-color: #209cee;
+    color: #fff;
+  }
+
+  &.is-danger {
+    background-color: #ff3860;
+    color: #fff;
+  }
+}
