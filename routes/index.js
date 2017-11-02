@@ -5,7 +5,7 @@ var transporter = require('../mailer');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'DMTR.' });
+  res.render('index', { title: 'DMTR' });
 });
 
 router.post('/', function(req, res, next) {  
